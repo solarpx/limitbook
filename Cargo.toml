@@ -1,0 +1,28 @@
+[package]
+name = "limitbook"
+version = "0.1.0"
+edition = "2024"
+license = "Apache-2.0"
+repository = 'https://github.com/solarpx/limitbook'
+homepage = 'https://github.com/solarpx/limitbook'
+categories = ['finance', 'algorithms', 'cryptography::cryptocurrencies']
+keywords = [
+    'trading',
+    'orderbook',
+    'matching-engine',
+    'finance',
+    'exchange',
+]
+description = 'High-performance Central Limit Order Book (CLOB) implementation with nanosecond-level matching'
+
+[dependencies]
+eyre = "0.6.12"
+rust_decimal = "1.37.2"
+rust_decimal_macros = "1.37.1"
+
+[dev-dependencies]
+criterion = "0.5"
+
+[[bench]]
+name = "limitbook_benchmarks"
+harness = false
